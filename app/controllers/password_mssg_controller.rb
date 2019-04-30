@@ -1,0 +1,2 @@
+class PasswordMssgController < ApplicationController
+end

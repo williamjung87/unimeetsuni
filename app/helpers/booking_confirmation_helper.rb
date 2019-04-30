@@ -1,0 +1,2 @@
+module BookingConfirmationHelper
+end

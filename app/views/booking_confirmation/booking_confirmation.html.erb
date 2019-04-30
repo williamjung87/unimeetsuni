@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+	<title>Sign UP Message</title>
+
+	<style type="text/css">
+
+		body {
+			background-image: url(assets/young-party.jpg);
+			background-size: cover;
+			margin: 0 auto;
+			background-repeat: repeat;
+			height: 100%;
+			font-family: 'Sriracha', cursive;
+		}
+
+		header {
+			height: 20px;
+		}
+
+		h6 {
+			font-size: 14px;
+			font-weight: bold;
+			font-family: 'Sriracha', cursive;
+		}		
+
+		img {
+			border-style: dashed;
+			border-radius: 10px;
+			border-color: #720303; 
+			text-align: center; 
+			align-content: center;
+		}
+
+		.card {
+			border-style: dashed;
+			border-radius: 10px;
+			border-color: #720303; 
+			text-align: center; 
+			align-content: center;
+
+		}
+
+	</style>
+</head>
+<body>
+
+	<!-- This header is to leave empty space very above the page. -->
+	<header>	</header>
+
+
+	<!-- Card Message -->
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col"></div>
+
+			<div class=" col " >
+
+				<img src="<%=asset_path 'wb.jpg'%>" class="card-img-top card" alt="wb">
+
+				<div class="card-body card">
+
+				<p class="card-title">I hope you have a good time with new people. You will get the schedule within 24 hours.</p>
+
+				
+
+				<!-- <a href="#" class="btn btn-primary btn-lg"></a> -->
+
+				<a href="#" style="padding-bottom: 8px; ">
+					<button type="button" class="btn btn-primary btn-lg" style="margin: auto;">Log Out</button>
+				</a>
+
+				<a href="/index">
+					<button type="button" class="btn btn-primary btn-lg" style="margin: auto;">Back to the Main Page</button>
+				</a>
+			</div>
+		</div>
+
+		<div class="col"></div>
+
+	</div>
+</div>
+</body>
+</html>

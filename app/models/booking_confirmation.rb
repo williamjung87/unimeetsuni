@@ -1,0 +1,2 @@
+class BookingConfirmation < ApplicationRecord
+end

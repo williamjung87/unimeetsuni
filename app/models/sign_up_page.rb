@@ -1,0 +1,2 @@
+class SignUpPage < ApplicationRecord
+end

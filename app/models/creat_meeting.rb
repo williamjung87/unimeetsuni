@@ -1,0 +1,2 @@
+class CreatMeeting < ApplicationRecord
+end

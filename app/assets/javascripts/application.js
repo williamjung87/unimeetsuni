@@ -13,3 +13,25 @@
 //= require rails-ujs
 //= require activestorage
 //= require_tree .
+
+
+
+
+
+
+$('.datepicker').datepicker();
+
+$('.datepicker').pickadate();
+
+$('.timepicker').timepicker();
+
+$('#datetimepicker').data("DateTimePicker").FUNCTION()
+
+$(document).ready(function(){
+
+ 
+
+
+
+
+

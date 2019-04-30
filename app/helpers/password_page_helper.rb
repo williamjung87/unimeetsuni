@@ -1,0 +1,2 @@
+module PasswordPageHelper
+end

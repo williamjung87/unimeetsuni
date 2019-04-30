@@ -1,0 +1,4 @@
+class SignUpMssgController < ApplicationController
+
+	
+end

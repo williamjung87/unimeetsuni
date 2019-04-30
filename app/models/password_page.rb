@@ -1,0 +1,2 @@
+class PasswordPage < ApplicationRecord
+end

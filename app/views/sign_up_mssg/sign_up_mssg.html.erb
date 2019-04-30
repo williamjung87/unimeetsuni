@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+	<title>Sign UP Message</title>
+
+	<style type="text/css">		
+
+		h6 {
+			font-size: 16px;
+			font-weight: bold;
+
+		}		
+
+		img {
+			border-style: dashed;
+			border-radius: 10px;
+			border-color: #879db5; 
+			text-align: center; 
+			align-content: center;
+		}
+
+		.card {
+			border-style: dashed;
+			border-radius: 10px;
+			border-color: #879db5; 
+			text-align: center; 
+			align-content: center;
+		}
+
+		p ,a {
+			font-family: 'Sriracha', cursive; 
+		}
+		
+	</style>
+
+</head>
+<body>
+
+	<!-- This header is to leave empty space very above the page. -->
+	<!-- Card Message -->
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col"></div>
+
+			<div class=" col " >
+
+				<img src="<%=asset_path 'postman.jpg'%>" class="card-img-top card" alt="postman"> 
+
+				<div class="card-body card">
+
+				<p class="card-title">Please Check Your Student Email Inbox</p>
+
+				<p class="card-text">You have just got an Invitation Email.</p>
+
+				<a href="/index">
+					<button type="button" class="btn btn-primary btn-lg" style="margin: auto; ">Back to the Main Page</button>
+				</a>
+
+			</div>
+
+		</div>
+
+		<div class="col"></div>
+
+	</div>
+</div>
+</body>
+</html>
