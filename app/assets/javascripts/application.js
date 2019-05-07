@@ -14,24 +14,10 @@
 //= require activestorage
 //= require_tree .
 
+$(function() {
 
-
-
-
-
-$('.datepicker').datepicker();
-
-$('.datepicker').pickadate();
-
-$('.timepicker').timepicker();
-
-$('#datetimepicker').data("DateTimePicker").FUNCTION()
-
-$(document).ready(function(){
-
- 
-
-
-
-
-
+  $(".flatpickr").flatpickr({
+    enableTime: true,
+    dateFormat: "Y-m-d H:i",
+  });
+});
