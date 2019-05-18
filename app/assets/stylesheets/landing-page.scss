@@ -15,8 +15,6 @@ h3,
 h4,
 h5,
 h6 {
-
-
   /* font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
 
   font-family: 'Lilita One', cursive;
@@ -32,7 +30,7 @@ header.masthead {
   padding-bottom: 6rem;
 }
 
-header.masthead .overlay {
+header.masthead.overlay {
   position: absolute;
   background-color: #000000;
   height: 100%;
@@ -73,8 +71,8 @@ header.masthead h1 {
 }
 
 .features-icons {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 25px;
+  padding-bottom: 20px;
 }
 
 .features-icons .features-icons-item {
@@ -82,7 +80,7 @@ header.masthead h1 {
 }
 
 .features-icons .features-icons-item .features-icons-icon {
-  height: 2rem;
+  height: 0.5rem;
 }
 
 .features-icons .features-icons-item .features-icons-icon i {
@@ -127,4 +125,14 @@ header.masthead h1 {
   opacity: 0.3;
 }
 
+img {
+  width: 200px;
+  height: 55px;
+  position: relative;
+  border-radius: 50px;
+}
 
+a {
+  color: blue;
+  font-size: 22px;
+}

@@ -1,2 +1,0 @@
-class PasswordMssgController < ApplicationController
-end

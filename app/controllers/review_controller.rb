@@ -1,7 +1,7 @@
 class ReviewController < ApplicationController
 
-	def review
+		def review
+			
+		end
 
-	end
-	
 end

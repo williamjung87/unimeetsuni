@@ -1,104 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Book a Meeting</title>
 
-<div class="container">
+  <style type="text/css">
 
+    body {
+      background-repeat: repeat;
+      width: 100%;
+      height: 100%;
+      background: cover;  
+      align-items: center;
+    }
 
+    h1,h3
+    {
+      color: #5569ed;
+      text-shadow: 2px 1px   #59574a;
 
+    }
 
- <div class="row">
+    p{
+      color: #5569ed;
+      font-size: 30px;
+      text-shadow: 2px 1px   #59574a;
+    }
 
+    .card {
+      height: 100%;
+      width: 100%;
+      background-color: #d0ede2;
+      border-radius: 15px;
+    } 
 
-   <div class="col-12">
+    .text-center{
+      text-align: center;
+    }
 
+    .paddingTop{
+      padding-top: 50px;
+    }
 
-     <h3 class="mt-3">Meetings</h3>
+    .main-content {
+      position: absolute;
+    }    
 
+    .background1 {
+      background-color: #c2d6d6;
+      position: relative;       
+      margin: 0 auto;
+      border-radius: 10px;
+      height: 100%;
+    }
 
-     <br>
+    .menu-font {
+      font-family: 'Sriracha', cursive;
+      font-size: 30px;
+    }
+    .submit-button {
+      font-family: 'Sriracha', cursive;
+      font-size: 15px;
+    } 
 
 
-     <table class="table">
+  </style>  
 
+  <body style="background-image: url(<%= image_url('young-party.jpg') %>)">
 
-       <thead>
+  </head>
 
+  <body >
 
-         <tr>
+    <div class="container paddingTop" style="text-align: center;">
+      <div class="row">
+        <div class="col-4"> </div>
+        <div class="col-4 mt-4 card">
 
+          <h1>Create meeting</h1>
 
-           <th>#</th>
+          <form action="/meetings" method="post">
 
+            <div class="form-group">
 
-           <th>Date</th>
+              <p for="datetime">Datetime</p>
 
+              <input type="text" class="form-control flatpickr" id="datetime" placeholder="Enter date" name="datetime" style="background-color: #fff;">
+            </div>
 
-           <th>Time</th>
+            <!-- Size of the Group -->
 
 
-           <th>Size</th>
+            <p>Size of the Group</p>
 
+            <div class="form-group">
 
-           <th>Purpose</th>
+              <select class="custom-select" id="inputGroupSelect02" aria-label="Example select with button addon" >
 
-
-           <th>Place</th>
-
-
-         </tr>
-
-
-       </thead>
-
-
-       <tbody>
-
-
-         <% @meetings.each do |meeting| %>
-
-
-           <tr>
-
-
-             <td><%= meeting.id %></td>
-
-
-             <td style="cursor: pointer;">
-
-
-               <a href="/meetings/<%= meeting.id %>"><%= meeting.date %></a>
-
-
-             </td>
-
-
-             <td><%= meeting.time %></td>
-
-
-             <td><%= meeting.size %></td>
-
-
-             <td><%= meeting.purpose %></td>
-
-
-             <td><%= meeting.place %></td>
-
-
-           </tr>
-
-
-         <% end %>
-
-
-       </tbody>
-
-
-     </table>
-
-
-   </div>
-
-
- </div>
-
-
+                <option selected>Choose...</option>
+                <option value="5">5 on 5</option>
+                <option value="2">2 on 2</option>
+                <option value="3">3 on 3</option>
+                <option value="4">4 on 4</option>
+                <option value="5">..any..</option>
+              </select>
+
+          <!-- <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button">OK</button>
+          </div> -->
+        </div>       
+
+        <!-- Purpose of the group Date  -->
+        <p class="menu-font pp">Purpose of the group Date</p>
+
+        <div class="input-group">
+
+          <select class="custom-select" id="inputGroupSelect03" aria-label="Example select with button addon">
+            <option selected>Choose...</option>
+            <option value="meal">Meal</option>
+            <option value="clubing">Clubing</option>
+            <option value="light_drinking">Light Drinking</option>
+            <option value="coffee_tea">Coffee or Tea</option>
+          </select>
+
+        </div>
+
+        <!-- Venue -->
+
+
+        <p class="menu-font">Venue</p>
+
+        <div class="input-group " >
+
+          <select class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+            <option selected>Choose...</option>
+            <option value="cbd">Brisbane CBD</option>
+            <option value="meal">Woolloongabba</option>
+            <option value="South_Bank">South Bank</option>
+            <option value="milton">Milton</option>
+            <option value="eat_street">Eat Street</option>
+            <option value="sunnybank">Sunny Bank</option>
+            <option value="westend">West End</option>
+          </select>
+
+        </div>
+        <br>
+        <div style="text-align: center; padding-bottom: 15px;">
+          <button type="submit" class="btn btn-primary">Create</button>
+        </div>
+
+      </div>
+
+    </form>
+  </div>
+</div>
 </div>
 
+</body>
+</html>

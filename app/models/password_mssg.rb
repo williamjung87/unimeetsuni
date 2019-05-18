@@ -1,2 +1,0 @@
-class PasswordMssg < ApplicationRecord
-end
