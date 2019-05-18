@@ -7,7 +7,10 @@ ruby '2.6.1'
 gem 'rails', '5.2.2'
 gem 'devise'
 gem 'faker'
+<<<<<<< HEAD
 gem 'mailgun-ruby'
+=======
+>>>>>>> b766aec8ea80d8aa424056f552a1439b7831f8d6
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', '~> 1.3.6'
 # Use Puma as the app server

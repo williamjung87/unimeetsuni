@@ -1,2 +1,0 @@
-class CreatMeeting < ApplicationRecord
-end
