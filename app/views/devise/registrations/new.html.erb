@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -54,4 +55,79 @@
       <%= render "devise/shared/links" %>
     </div>
   </div>
+=======
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Carter+One|Lilita+One" rel="stylesheet">
+    <style type="text/css">
+    body {
+        font-family: 'Carter One', cursive;
+        font-size: 20px;
+        
+        background-color: #eebaff;
+    }
+
+    #name {
+        font-family: 'Carter One', cursive;
+        font-size: 80px;
+        background-color: #;
+    }
+
+    #subname {
+        font-family: 'Carter One', cursive;
+        font-size: 30px;
+        background-color: #;
+    }
+
+    #signUpCard {
+        font-family: 'Carter One', cursive;
+        font-size: 15px;
+        color: white;
+        background-color: #eebaff;
+    }
+    </style>
+</head>
+<br>
+<br>
+<div class="row justify-content-md-center text-white" id="name">
+    <p>Uni Meets Uni</p>
+</div>
+<div class="row justify-content-md-center text-white" id="subname">
+    <p>Having fun, safely and responsibly</p>
+</div>
+</div>
+<br>
+<div class="container">
+    <div class="row justify-content-md-center">
+        <div class="card" id="signUpCard" style="width: 35rem;">
+            <div class="row justify-content-md-center" id="subname">
+                <p>Sign up</p><br>
+            </div>
+            <div class="col-md-auto mb-10">
+                <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+                <%= render "devise/shared/error_messages", resource: resource %>
+                <div class="form-group">
+                    <%= f.label :email %>  ( Please use student email ) <br />
+                    <%= f.email_field :email, autofocus: true, autocomplete: "email",  class: "form-control" %>
+                </div>
+                <div class="form-group">
+                    <%= f.label :password %>
+                    <% if @minimum_password_length %>
+                    <em>(
+                        <%= @minimum_password_length %> characters minimum)</em>
+                    <% end %>
+                    <%= f.password_field :password, autocomplete: "new-password", class: "form-control" %>
+                </div>
+                <div class="form-group">
+                    <%= f.label :password_confirmation %><br />
+                    <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-control" %>
+                </div>
+                <div class="actions">
+                    <%= f.submit "Sign up", class:"btn btn-primary"%>
+                </div>
+                <br><br>
+            </div>
+        </div>
+    </div>
+    <% end %>
+>>>>>>> devise-william
 </div>
